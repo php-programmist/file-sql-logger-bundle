@@ -1,0 +1,9 @@
+services:
+    php_programmist_file_sql_logger.file_sql_logger:
+        class: PhpProgrammist\FileSqlLoggerBundle\FileSqlLogger
+        public: false
+        arguments:
+            - '@parameter_bag'
+            - '@filesystem'
+    PhpProgrammist\FileSqlLoggerBundle\FileSqlLogger:
+        alias: php_programmist_file_sql_logger.file_sql_logger
