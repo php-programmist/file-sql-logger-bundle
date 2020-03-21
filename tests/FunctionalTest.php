@@ -36,6 +36,7 @@ class TestingKernel extends Kernel
     {
         $c->loadFromExtension('framework', [
             'secret' => 'F00',
+            'router' => ['utf8'=>true],
         ]);
         $loader->load(__DIR__.'/config/services_test.yaml');
     }
