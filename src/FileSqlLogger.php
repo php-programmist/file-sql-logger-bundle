@@ -15,7 +15,7 @@ class FileSqlLogger implements SQLLogger
     protected $filesystem;
     private $filename;
     
-    public function __construct(ParameterBagInterface $params,Filesystem $filesystem,?string $pathToLogs)
+    public function __construct(ParameterBagInterface $params,Filesystem $filesystem,?string $pathToLogs=null)
     {
         $this->filesystem = $filesystem;
         if (null === $pathToLogs) {

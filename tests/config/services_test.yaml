@@ -1,0 +1,5 @@
+services:
+    php_programmist_file_sql_logger.file_sql_logger:
+        class: PhpProgrammist\FileSqlLoggerBundle\FileSqlLogger
+        autowire: true
+        public: true
