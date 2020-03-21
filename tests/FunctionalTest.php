@@ -34,6 +34,9 @@ class TestingKernel extends Kernel
     }
     protected function configureContainer(ContainerBuilder $c, LoaderInterface $loader)
     {
+        $c->loadFromExtension('framework', [
+            'secret' => 'F00',
+        ]);
         $loader->load(__DIR__.'/config/services_test.yaml');
     }
     
